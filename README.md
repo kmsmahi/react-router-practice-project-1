@@ -1,16 +1,47 @@
-# React + Vite
+# 📚 Book Vibe
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A sophisticated book management platform designed for a seamless literary experience. This project features a high-performance, responsive UI with persistent data management, allowing users to organize their reading journeys with ease.
 
-Currently, two official plugins are available:
+## 🔗 Live Demo
+**View the live project here:** [https://booksvibe-project.surge.sh/](https://booksvibe-project.surge.sh/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## 📖 Project Overview
+**Book Vibe** is a modern React application built to showcase a professional approach to UI/UX and state management. The platform allows users to explore a curated library, view detailed book analytics, and maintain a personalized reading list using persistent local storage.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### Key Features
+*   **Dynamic Routing:** Seamless navigation using React Router v6 with dynamic ID-based book details.
+*   **Professional UI/UX:** A "Smart" aesthetic utilizing Tailwind CSS and daisyUI, featuring glassmorphism, smooth transitions, and high-end typography.
+*   **Data Persistence:** Integrated Browser LocalStorage to save and manage "Read" and "Wishlist" selections across sessions.
+*   **Responsive Design:** Fully optimized layout for Mobile, Tablet, and Desktop environments.
+*   **Optimized Performance:** Efficient data handling using React Router Loaders to ensure smooth transitions and zero-flicker loading.
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🛠️ Tech Stack
+*   **Core:** React.js
+*   **Routing:** React Router (v6.x)
+*   **Styling:** Tailwind CSS & daisyUI
+*   **Icons:** Lucide-React / React-Icons
+*   **Data Architecture:** JSON-based local database
+*   **Deployment:** Surge
+
+---
+
+## 📂 Project Structure
+*   `src/components/` - Reusable UI elements (Navbar, Card, Banner).
+*   `src/pages/` - Main views (Home, BookDetails, ListedBooks).
+*   `src/utils/` - LocalStorage and helper functions for database management.
+*   `public/` - Static assets and `booksData.json`.
+
+---
+
+## ✍️ Author
+**Kazi Mohammed Salah Uddin Mahi**  
+*Computer Science & Engineering Student*  
+*Full-Stack Web Development Enthusiast*
+
+---
+
+© 2026 Book Vibe Project. Built with professional care and discipline.
