@@ -1,4 +1,5 @@
 import { useLoaderData, useParams } from "react-router";
+import { addtoDb } from "../../Components/Utilities/Addtodb";
 
 const BookDetails = () => {
     const { bookId } = useParams();
@@ -18,6 +19,10 @@ const BookDetails = () => {
         image, bookName, author, category, rating, 
         tags, review, totalPages, publisher, yearOfPublishing 
     } = singleBookDetails;
+    const readHandler=(id)=>{
+
+         addtoDb(id);
+    }
 
     return (
         <div className="container mx-auto my-12 px-4 md:px-8 lg:px-0">
@@ -76,7 +81,7 @@ const BookDetails = () => {
 
                     {/* Action Buttons */}
                     <div className="flex gap-4 mt-8">
-                        <button className="btn btn-outline px-8 py-3 h-auto text-lg font-bold border-gray-300 hover:bg-[#23BE0A] hover:border-[#23BE0A] capitalize">
+                        <button onClick={readHandler(bookId)} className="btn btn-outline px-8 py-3 h-auto text-lg font-bold border-gray-300 hover:bg-[#23BE0A] hover:border-[#23BE0A] capitalize">
                             Read
                         </button>
                         <button className="btn bg-[#50B1C9] hover:bg-[#3da1b8] text-white border-none px-8 py-3 h-auto text-lg font-bold capitalize">
